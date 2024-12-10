@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: hsl(0, 0%, 98%); */
+  background-color: rgb(128, 162, 255);
+  margin: 0;
+  padding: 0;
+}
+
+/*Heading*/
+h1 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 3px -1px 30px violet;
+  
+  font-size: 2.8rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Nav bar*/
+nav {
+  background-color:  hsl(227, 70%, 93%);
+  padding: 10px;
+  text-align: start;
+}
+nav a {
+  color: hsl(255, 100%, 40%);
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  margin-left: 8px;
+}
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*Form, Search box*/
+.form-container {
+  background-color: hsl(0, 0%, 90%);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+form button {
+  /* background-color: hsl(145, 63%, 50%); */
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+form button:hover {
+  /* background-color: hsl(145, 63%, 40%); */
+  background-color: hsl(271, 76%, 40%);
+}
+
+form label, .search-box label {
+  font-weight: bold;
+}
+form input, .search-box input {
+  padding: 10px;
+  border: none;
+  /* border: 1px solid hsl(0, 0%, 80%); */
+  outline: none;
+  border-radius: 5px;
+  width: 200px;
+  background-color: hsl(0, 0%, 97%);
+}
+
+
+/*Player Cards*/
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 10px 10px 0px;
+  width: 100%;
+}
+.players-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
+  background-color: hsl(0, 0%, 99%);
+  text-align: center;
+  width: 20%;
+  transition: 0.2s ease;
+}
+.players-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 20px violet;
+  border: 1px solid violet;
+}
+
+.players-card h3 {
+  color: #34495e;
+}
+.players-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.players-card button, .selected-card button {
+  padding: 10px 15px;
+  margin: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.detailBtn {
+  background-color: hsl(240, 97%, 65%);
+}
+.deleteBtn {
+  background-color: hsl(0, 94%, 65%);
+  /* margin-left: 10px; */
+}
+.detailBtn:hover {
+  background-color: hsl(240, 100%, 45%);
+}
+.deleteBtn:hover {
+  background-color: hsl(0, 100%, 45%);
+}
+
+/*Single Card*/
+.selected-card {
+  border: 1px solid #ddd;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  font-size: large;
+  transition: 0.2s ease;
+}
+.selected-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 20px violet;
+}
+
+.selected-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/*Error message*/
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
